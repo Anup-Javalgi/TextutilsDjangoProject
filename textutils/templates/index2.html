@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TextUtils</title>
+</head>
+<body>
+<!--<div>{{name}} Learning django with code with harry!</div>-->
+<!--<div>{{name}} favourite place is {{place}}</div>-->
+<h1>Welcome to text analyser. Enter your text below</h1>
+<!--<form action="/removepunc" method="get"> get : The form data is sent as query parameters in the URL. -->
+<form action="/analyze" method="get">
+    <textarea name="text" style="margin:0px; width:721px;height:93px;"></textarea><br>
+    <input type="checkbox" name="fullcaps">Uppercase<br>
+    <input type="checkbox" name="checkpunct">Remove punctuations<br>
+    <input type ="checkbox" name="checknlr">New Line Remover<br>
+    <input type="checkbox" name="checkesr">Extraspace Remover<br>
+    <input type="checkbox" name="checkcount">Character Counter<br>
+    <button type="submit">Analyze text</button>
+</form>
+</body>
+</html>
